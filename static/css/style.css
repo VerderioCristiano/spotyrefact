@@ -1,0 +1,152 @@
+/* Nuovo design - dark theme moderno */
+body {
+    background-color: #181818; /* Colore di sfondo più scuro */
+    color: #E0E0E0; /* Testo chiaro ma non accecante */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderno e leggibile */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #FF4C00; /* Un arancione vivace per contrasto */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.05); /* Leggero ingrandimento al passaggio del mouse */
+    color: #FF7F00; /* Colore di hover più chiaro */
+}
+
+img {
+    border-radius: 50%; /* Immagine circolare */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); /* Ombra più pronunciata */
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); /* Ingrandisce l'immagine */
+}
+
+a {
+    color: #FF4C00; /* Arancione */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #FF7F00; /* Colore di hover */
+    text-decoration: underline; /* Sottolineato al passaggio del mouse */
+}
+
+.Jumbotron h1 {
+    font-size: 4.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 15%;
+    color: #FF4C00;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+    letter-spacing: 0.1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .Jumbotron h1 {
+        font-size: 2.5em;
+    }
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #FF4C00; /* Colore arancione per i sottotitoli */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #CCCCCC; /* Colore grigio chiaro per la lista */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+li:hover {
+    color: #FF4C00; /* Arancione quando passa sopra un elemento */
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid #444;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #252525; /* Colore più scuro per l'intestazione */
+    color: #FF4C00;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+td {
+    background-color: #202020;
+    color: #E0E0E0;
+}
+
+tr:hover td {
+    background-color: #333333; /* Colore di background più scuro per le righe al passaggio del mouse */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+    }
+}
